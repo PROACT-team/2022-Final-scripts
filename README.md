@@ -50,7 +50,7 @@ Testing model by external validation using SNU hospital ALS registry data
 Investigating data heterogeneity between PRO-ACT and SNUH registry data
 
 **Loss_of_autonomy_VS_gastrostomy placement.ipynb**         
-Temporal relationship between the loss of swallowing functional autonomy and gastrostomy placement
+()Temporal relationship between the loss of swallowing functional autonomy and gastrostomy placement
 
 # Gastrostomy prediction
 
