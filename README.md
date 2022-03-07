@@ -37,7 +37,7 @@ Building prediction model & testing model performance
 **4_SNUH_Registry_External_validation_0227.ipynb**   
 Testing model by external validation using SNU hospital ALS registry data
 
-**Proact_vs_Snuh_0227.ipynb**
+**Proact_vs_Snuh_0227.ipynb**           
 Investigating data heterogeneity between PRO-ACT and SNUH registry data
 
 # Gastrostomy prediction
@@ -77,9 +77,10 @@ build a model to predict the time to loss of autonomy in swallowing function
 <img src="https://user-images.githubusercontent.com/78291206/156963956-44dbbcbb-7d7c-4544-a616-cff3938d6fde.png"  width="400" height="400"/>
 
 **Model Performance** :         
-- *C-index* in repeated 5-fold cross validation
-![image](https://user-images.githubusercontent.com/78291206/156964360-3b6eed0c-9769-48c2-bc29-aaa9fca270a6.png)
+- *C-index* in repeated 5-fold cross validation        
 models show C-index around 0.86
+![image](https://user-images.githubusercontent.com/78291206/156964360-3b6eed0c-9769-48c2-bc29-aaa9fca270a6.png)
+
 
 - *D-calibration* in repeated 5-fold cross validation
 chi-square goodness of fit among 10 percentile bins
