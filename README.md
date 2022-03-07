@@ -74,18 +74,35 @@ build a model to predict the time to loss of autonomy in swallowing function
 **Feature selection - Wrapper method applied to each algorithm** : 
 - Lasso regression(AFT, COX) & permutation importance based selection(RSF)
 - selected features
-![feature selection](https://user-images.githubusercontent.com/78291206/156963956-44dbbcbb-7d7c-4544-a616-cff3938d6fde.png)
+<img src="https://user-images.githubusercontent.com/78291206/156963956-44dbbcbb-7d7c-4544-a616-cff3938d6fde.png"  width="400" height="400"/>
 
+**Model Performance** :         
+- *C-index* in repeated 5-fold cross validation
+![image](https://user-images.githubusercontent.com/78291206/156964360-3b6eed0c-9769-48c2-bc29-aaa9fca270a6.png)
+models show C-index around 0.86
 
-**Results** :         
-- Evaluating model performance; C-index in Repeated 5-fold cross validation
-![C-index](https://user-images.githubusercontent.com/79128639/135747430-93d02c66-7ffe-4feb-8def-ffd85ec411fe.PNG)
-models show C-index around 0.84
+- *D-calibration* in repeated 5-fold cross validation
+chi-square goodness of fit among 10 percentile bins
+<img src="https://user-images.githubusercontent.com/78291206/156966144-58917610-53f1-4977-a9d0-37b7bfa89d23.png"  width="500" height="400"/>
 
+- *Integrated Brier score* done in cross validation frame [1 ~ 30 months]
+<img src="https://user-images.githubusercontent.com/78291206/156965872-05378922-6d4e-4f50-9159-a927fb9d0443.png"  width="670" height="320"/>
 
-- Group Stratification
-![group stratification](https://user-images.githubusercontent.com/79128639/135747846-858af067-a9e7-4fb8-89a1-06ed7d239582.PNG)
+- *Group Stratification*      
 Prediction matches well with Kaplan Meier in Rapid and Intermediate group but not much in slow group
+![image](https://user-images.githubusercontent.com/78291206/156965912-3876477d-bd82-4054-9e05-f70f65ff5164.png)
 
-![group stratification2](https://user-images.githubusercontent.com/79128639/135747505-73614925-48de-4fbe-a23f-c1ee73470925.PNG)
-Thick colored lines are interquartile range between 25 to 75 % probability time to event. And the dots in the middle are the 50% probability times    
+**External validation in SNUH data**:
+- Bootstrap *C-index*
+<img src="https://user-images.githubusercontent.com/78291206/156966842-1c223751-92a6-4d2d-959f-f7b0438eefc7.png"  width="670" height="320"/>
+
+- Bootstrap *D-calibration*
+<img src="https://user-images.githubusercontent.com/78291206/156966899-dc313b72-70ef-40f8-a739-3d71c5293497.png"  width="500" height="400"/>
+
+- *Integrated Brier score* in whole SNUH data
+![image](https://user-images.githubusercontent.com/78291206/156967171-195669e1-ec2f-4a47-8c93-c7ccec8be87b.png)
+
+- Demonstration on random 5 patient
+![image](https://user-images.githubusercontent.com/78291206/156967301-ac893665-89e4-49b3-9840-e6d18cfd567b.png)
+
+
