@@ -22,6 +22,8 @@ https://www.dropbox.com/sh/3lmi5ii3sgyi7o3/AACeVLTGtSDXSKIaX6P7Hxj2a?dl=0
 (local) /Users/hong/Dropbox/ALSmaster/PROACT  
 
 ## Scripts   
+For further details, please note the explanations on tags in python code.  
+
 **1_Preprocessing_0227.ipynb**   
 Extracting features and target variables from PRO-ACT dataset & Data imputation
 - 0227_optimal_target.csv
