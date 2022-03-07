@@ -24,9 +24,16 @@ https://www.dropbox.com/sh/3lmi5ii3sgyi7o3/AACeVLTGtSDXSKIaX6P7Hxj2a?dl=0
 ## Scripts   
 **1_Preprocessing_0227.ipynb**   
 Extracting features and target variables from PRO-ACT dataset & Data imputation
+- 0227_optimal_target.csv
+- 0227_real_target.csv
+- 0227_X_y_NaN_whole.csv
+- 0227_X_y_imputed_whole.csv
 
 **1_Preprocessing_snuh_0227.ipynb**   
 Extracting features and target variables from tertiary ALS clinic & Data imputation
+- 0227_X_NaN_snuh.csv
+- 0227_optimal_target_snuh.csv
+- 0227_real_target_snuh_status1.csv
 
 **2_feature_selection_0227.ipynb**    
 Lasso & permutation importance based selection
@@ -39,6 +46,9 @@ Testing model by external validation using SNU hospital ALS registry data
 
 **Proact_vs_Snuh_0227.ipynb**           
 Investigating data heterogeneity between PRO-ACT and SNUH registry data
+
+**Loss_of_autonomy_VS_gastrostomy placement.ipynb**         
+Temporal relationship between the loss of swallowing functional autonomy and gastrostomy placement
 
 # Gastrostomy prediction
 
